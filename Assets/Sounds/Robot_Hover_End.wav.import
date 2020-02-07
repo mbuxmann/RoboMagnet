@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Robot_Hover_End.wav-dde3389abd35d158afa3ac3519b9a3e6.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Robot_Hover_End.wav"
+dest_files=[ "res://.import/Robot_Hover_End.wav-dde3389abd35d158afa3ac3519b9a3e6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

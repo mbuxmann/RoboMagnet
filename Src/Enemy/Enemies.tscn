@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Src/Enemy/Enemy.gd" type="Script" id=1]
+[ext_resource path="res://Src/Enemy/Enemy.tscn" type="PackedScene" id=2]
+
+[node name="Enemies" type="Node2D"]
+
+[node name="Enemy" type="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 88.3324, 248.119 )
+collision_layer = 32
+collision_mask = 67
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Enemy_Move_Loop.wav-2ab7fabe070401ff3e5a3d3eba4b1477.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Enemy_Move_Loop.wav"
+dest_files=[ "res://.import/Enemy_Move_Loop.wav-2ab7fabe070401ff3e5a3d3eba4b1477.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

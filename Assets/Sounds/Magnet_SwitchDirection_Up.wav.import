@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Magnet_SwitchDirection_Up.wav-5e39f2942d89478cbbb71c0f2809f3fc.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Magnet_SwitchDirection_Up.wav"
+dest_files=[ "res://.import/Magnet_SwitchDirection_Up.wav-5e39f2942d89478cbbb71c0f2809f3fc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

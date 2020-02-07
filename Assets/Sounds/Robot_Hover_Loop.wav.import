@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Robot_Hover_Loop.wav-94e0bfbfaa4b9c3c9541dd423bf91545.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Robot_Hover_Loop.wav"
+dest_files=[ "res://.import/Robot_Hover_Loop.wav-94e0bfbfaa4b9c3c9541dd423bf91545.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

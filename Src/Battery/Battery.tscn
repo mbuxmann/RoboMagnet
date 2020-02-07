@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Sprites/Magnets.png" type="Texture" id=1]
+[ext_resource path="res://Src/Battery/Battery.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Sounds/Battery_Pickup.wav" type="AudioStream" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 5.53458
+height = 5.73743
+
+[sub_resource type="Animation" id=2]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 36, 37, 38, 39 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Battery_Pickedup"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 1,
+"values": [  ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[node name="Battery" type="Area2D"]
+collision_layer = 8
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Skin" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Skin"]
+texture = ExtResource( 1 )
+vframes = 8
+hframes = 5
+frame = 38
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Skin"]
+anims/Battery_Idle = SubResource( 2 )
+anims/Battery_Pickedup = SubResource( 3 )
+
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 3 )
+[connection signal="body_entered" from="." to="." method="_on_Battery_body_entered"]
+[connection signal="finished" from="Sounds/AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]
