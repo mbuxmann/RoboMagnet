@@ -5,6 +5,8 @@ Play as the Robo Magnet and move through the levels while you collect batteries 
 
 Made for the [Weekly Game Jam 134](https://itch.io/jam/weekly-game-jam-134)
 
+Play at [Itch.io](https://bitvivaz.itch.io/robomagnet)
+
 The Controls:
 
 - W/A/S/D - Magnet Direction
@@ -21,7 +23,6 @@ Credit:
 
 - Music & Sound: [@CDWpod](https://cdwpod.itch.io/)
 
-Play at [Itch.io](https://bitvivaz.itch.io/robomagnet)
 ### TECH STACK
 
 - Godot Engine
