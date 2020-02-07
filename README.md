@@ -34,7 +34,7 @@ Play at [Itch.io](https://bitvivaz.itch.io/robomagnet)
 ### SCREENSHOTS
 
 ![](screenshots/main.png)
-![](screenshots/Level01.png)
-![](screenshots/Level02.png)
-![](screenshots/Level04.png)
-![](screenshots/Level05.png)
+![](screenshots/level01.png)
+![](screenshots/level02.png)
+![](screenshots/level04.png)
+![](screenshots/level05.png)
